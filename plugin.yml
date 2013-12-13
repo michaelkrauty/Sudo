@@ -1,0 +1,27 @@
+name: Sudo
+main: me.michaelkrauty.Sudo.Sudo
+version: 1.0
+author: michaelkrauty
+commands:
+  sudo:
+    description: stuff & stuff
+    usage: /<command>
+permissions:
+  sudo.*:
+    description: Gives access to all Sudo commands
+    children:
+      sudo.sudo: true
+      sudo.op: true
+      sudo.console: true
+      sudo.say: true
+      sudo.help: true
+  sudo.sudo:
+    description: Gives access to /sudo
+  sudo.op:
+    description: Gives access to /sudo op
+  sudo.console:
+    description: Gives access to /sudo console
+  sudo.say:
+    description: Gives access to /sudo say
+  sudo.help:
+    description: Gives access to /sudo help
