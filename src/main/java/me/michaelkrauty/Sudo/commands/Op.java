@@ -57,6 +57,7 @@ public class Op {
 				main.getServer().dispatchCommand(player, string.replace("<player>", player.getName()).replace("<name>", player.getName()));
 				if (!op)
 					player.setOp(false);
+				return;
 			}
 			sender.sendMessage(ChatColor.GREEN + "Couldn't find that player!");
 			return;
