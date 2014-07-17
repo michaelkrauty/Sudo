@@ -11,6 +11,7 @@ permissions:
     description: Gives access to all Sudo commands
     children:
     sudo.sudo: true
+    sudo.help: true
     sudo.op: true
     sudo.op.all: true
     sudo.say: true
