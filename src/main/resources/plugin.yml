@@ -1,0 +1,35 @@
+name: Sudo
+version: 1.0
+author: michaelkrauty
+main: me.michaelkrauty.Sudo.Main
+commands:
+  sudo:
+    description: Make other players perform commands
+    usage: /<command>
+permissions:
+  sudo.*:
+    description: Gives access to all Sudo commands
+    children:
+    sudo.sudo: true
+    sudo.op: true
+    sudo.op.all: true
+    sudo.say: true
+    sudo.say.all: true
+    sudo.console: true
+    sudo.all: true
+  sudo.sudo:
+    description: The main sudo command
+  sudo.help:
+    description: See sudo help dialogue
+  sudo.op:
+    description: Command is executed as OP
+  sudo.op.all:
+    description: Make all other players execute a command as OP
+  sudo.say:
+    description: Make another player say something
+  sudo.say.all:
+    description: Make all players say something
+  sudo.console:
+    description: Execute console commands
+  sudo.all:
+    description: Make all other players execute a command
