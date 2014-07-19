@@ -10,14 +10,14 @@ permissions:
   sudo.*:
     description: Gives access to all Sudo commands
     children:
-    sudo.sudo: true
-    sudo.help: true
-    sudo.op: true
-    sudo.op.all: true
-    sudo.say: true
-    sudo.say.all: true
-    sudo.console: true
-    sudo.all: true
+      sudo.sudo: true
+      sudo.help: true
+      sudo.op: true
+      sudo.op.all: true
+      sudo.say: true
+      sudo.say.all: true
+      sudo.console: true
+      sudo.all: true
   sudo.sudo:
     description: The main sudo command
   sudo.help:
